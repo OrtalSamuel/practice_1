@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity_Main">
+    <ImageView
+        android:id="@+id/main_IMG_help"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/ic_moon"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="32dp"
+        android:layout_marginRight="32dp"
+        />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/main_LBL_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textSize="50sp"
+        android:layout_marginTop="20dp"
+        android:text="Hello Afeka!"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/main_BTN_clickMe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main_LBL_name"
+        android:textSize="30dp"
+        android:layout_centerHorizontal="true"
+        android:text="Click me"/>
+
+    <EditText
+        android:id="@+id/main_EDT_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_above="@id/main_LBL_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:inputType="textPersonName"
+        android:text="Name" />
+
+
+</RelativeLayout>
